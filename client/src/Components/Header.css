@@ -1,0 +1,49 @@
+.header{
+    background-color: #daada2;
+    padding: 0.5%;
+    display: flex;
+}
+.left{
+    display: flex;
+    background-color: #f0ddd9;
+    flex-basis: 16%;
+    padding: 2px;
+    margin-right:.5vw;
+    border-radius: 20px;
+    transition: .25s;
+   
+}
+
+
+
+.right{
+    border-left: 1px solid grey;
+    flex-basis: 75%;
+}
+.SearchBar{
+    background-color: #f0ddd9;
+    border: none;
+    outline: none;
+    height: 3vh;
+    width: 90%;
+    padding: 1%;
+    border-radius: 20px;
+}
+
+.left button{
+    border-radius: 50%;
+    width: 10%;
+    float: right;
+    border: none;
+    outline: none;
+    background-color: #f0ddd9;
+    color: #4b8ea7;
+}
+
+.left button:hover{
+    color: #5fd4ff;
+}
+
+.left button:active{
+    color: #0d7eaa;
+}
