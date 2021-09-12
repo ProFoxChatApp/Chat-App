@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.loginContainer{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, #809b99de, #523253b7,#0f252b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.loginBox{
+    width: 25vw;
+    height: 30vw;
+    background: #3a3a3a;
+    border-radius: 10px;
+    box-shadow: -5px 7px 8px #00000080, 2px -2px 2px #00000030;
+    
+}
+.loginBox input{
+    width: 70%;
+    height: 10%;
+    margin: 5% 0 5% 0;
+    background-color: #00000000;
+    color: gray;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    transition: 0.5s;
+    text-align: center;
+}
+.loginBox input:hover{
+    border-color: #7b7bf5;
+}
+.loginForm{
+    width: 100%;
+    height: 67%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginBox input:focus{
+    border-color: #7b7bf5;
+}
+
+.loginForm .submitButton{
+    margin-top: 5%;
+    width: 50%;
+    height: 10%;
+    background-color: #7566ff;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 530;
+    
+}
+
+.loginForm .submitButton:hover{
+    background: #988dff;
+}
+
+.loginForm .submitButton:active{
+    background: #5c75bb;
+    color: #fdfbf5;
+}
+
+.loginBox .logo{
+    height: 30%;
+    width: 100%;
+    background: none;
+}
+
+.loginForm .signupBtn{
+    margin-top: 5%;
+    color: #905bb3;
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+.loginForm .signupBtn:hover{
+    text-decoration: underline;
+}
+
+.loginBox input:-webkit-autofill,
+.loginBox input:-webkit-autofill:hover, 
+.loginBox input:-webkit-autofill:focus,
+.loginBox textarea:-webkit-autofill,
+.loginBox textarea:-webkit-autofill:hover,
+.loginBox textarea:-webkit-autofill:focus,
+.loginBox select:-webkit-autofill,
+.loginBox select:-webkit-autofill:hover,
+.loginBox select:-webkit-autofill:focus {
+  
+  -webkit-text-fill-color: gray;
+  -webkit-box-shadow: 0 0 0px 1000px #3a3a3a inset;
+  box-shadow: 0 0 0px 1000px #3a3a3a inset;
+}
