@@ -1,11 +1,11 @@
 .header{
-    background-color: #daada2;
+    background-color: #8990f1;
     padding: 0.5%;
     display: flex;
 }
 .left{
     display: flex;
-    background-color: #f0ddd9;
+    background-color: #dfedf5;
     flex-basis: 16%;
     padding: 2px;
     margin-right:.5vw;
@@ -17,17 +17,18 @@
 
 
 .right{
-    border-left: 1px solid grey;
+    border-left: 1px solid #7077dd;
     flex-basis: 75%;
 }
 .SearchBar{
-    background-color: #f0ddd9;
+    background-color: #dfedf5;
     border: none;
     outline: none;
     height: 3vh;
     width: 90%;
     padding: 1%;
     border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .left button{
@@ -36,7 +37,7 @@
     float: right;
     border: none;
     outline: none;
-    background-color: #f0ddd9;
+    background-color: #dfedf5;
     color: #4b8ea7;
 }
 
