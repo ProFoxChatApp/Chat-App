@@ -1,6 +1,6 @@
 let users = [
     {
-        name:'Anushka',
+        name:'idk',
         pfp:'https://i.pinimg.com/originals/a0/50/1e/a0501e0c5659dcfde397299e4234e75a.gif'
     },
 

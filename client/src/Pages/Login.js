@@ -1,14 +1,14 @@
 import React from 'react'
 import './Login.css'
 
-function Login({
-    setLoggedIn
-}) {
+function Login() {
+
+    
 
     const handleSubmit = (event) => {
         event.preventDefault()
         alert("User authentication is not yet implemented. This is will just redirect you to the main app")
-        setLoggedIn(true)
+       
     }
 
     return (
