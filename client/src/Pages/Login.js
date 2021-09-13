@@ -1,14 +1,15 @@
 import React from 'react'
 import './Login.css'
+import {useNavigate} from '@reach/router'
 
-function Login({
-    setLoggedIn
-}) {
+function Login() {
+
+    const navigate = useNavigate();
 
     const handleSubmit = (event) => {
         event.preventDefault()
         alert("User authentication is not yet implemented. This is will just redirect you to the main app")
-        setLoggedIn(true)
+        navigate('/', { replace: false })
     }
 
     return (
@@ -20,7 +21,9 @@ function Login({
                 <form onSubmit={handleSubmit} className="loginForm">
                     <input type="email" placeholder="email" required/>
                     <input type="password" placeholder="password" required/><br/>
+                    
                     <button type="submit"className="submitButton">Login</button>
+                    
                     <a href="#" className="signupBtn">Sign up</a>
                 </form>
             </div>

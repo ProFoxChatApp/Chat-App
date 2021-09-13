@@ -3,19 +3,27 @@ import './App.css';
 import Header from './Components/Header';
 import Body from './Pages/Body';
 import Login from './Pages/Login';
+import {Router} from '@reach/router'
 
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false)
-  return (
-    <div className="App">
-      {
-        loggedIn ? <div className="app">
+
+  const App = () => {
+    return (
+      <div className="app" path='home'>
           <Header />
           <Body />
-        </div> :
-          <Login setLoggedIn={setLoggedIn} />
-      }
+        </div> 
+    )
+  }
+
+  return (
+    <div className="App">
+      <Router>
+        <App path='/'/>
+        <Login path='login' />
+        </Router>
     </div>
   );
 }
