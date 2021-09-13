@@ -11,10 +11,10 @@ function App() {
     <div className="App">
       {
         loggedIn ? <div className="app">
-          <Header/>
-          <Body/>
+          <Header />
+          <Body />
         </div> :
-        <Login setLoggedIn={setLoggedIn} />
+          <Login setLoggedIn={setLoggedIn} />
       }
     </div>
   );

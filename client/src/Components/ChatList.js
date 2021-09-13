@@ -1,94 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Chat from './Chat'
+import users from './demo-users'
 
 function ChatList() {
+    
+    const [selectedUser, setSelectedUser] = useState()
+
     return (
         <div className="chatList">
-
-            <div className="active">
-                <img src="https://wallpapercave.com/wp/wp6686191.jpg" alt="" className="pfp" />
-                Someone
-            </div>
-
-            <div className="name">
-                <img src="https://wallpapercave.com/wp/wp6686191.jpg" alt="" className="pfp" />
-                Someone else
-            </div>
-
-            <div className="name">
-                <img src="https://wallpapercave.com/wp/wp6686191.jpg" alt="" className="pfp" />
-                Someone
-            </div>
-
-            <div className="name">
-                <img src="https://wallpapercave.com/wp/wp6686191.jpg" alt="" className="pfp" />
-                Someone else
-            </div>
-
-            <div className="name">
-                <img src="https://wallpapercave.com/wp/wp6686191.jpg" alt="" className="pfp" />
-                Someone
-            </div>
-
-            <div className="name">
-                <img src="https://wallpapercave.com/wp/wp6686191.jpg" alt="" className="pfp" />
-                Someone else
-            </div>
-
-            <div className="name">
-                <img src="https://wallpapercave.com/wp/wp6686191.jpg" alt="" className="pfp" />
-                Someone
-            </div>
-
-            <div className="name">
-                <img src="https://wallpapercave.com/wp/wp6686191.jpg" alt="" className="pfp" />
-                Someone else
-            </div>
-
-
-
-            <div className="name">
-                <img src="https://wallpapercave.com/wp/wp6686191.jpg" alt="" className="pfp" />
-                Someone
-            </div>
-
-            <div className="name">
-                <img src="https://wallpapercave.com/wp/wp6686191.jpg" alt="" className="pfp" />
-                Someone else
-            </div>
-
-            <div className="name">
-                <img src="https://wallpapercave.com/wp/wp6686191.jpg" alt="" className="pfp" />
-                Someone
-            </div>
-
-            <div className="name">
-                <img src="https://wallpapercave.com/wp/wp6686191.jpg" alt="" className="pfp" />
-                Someone else
-            </div>
-
-            <div className="name">
-                <img src="https://wallpapercave.com/wp/wp6686191.jpg" alt="" className="pfp" />
-                Someone
-            </div>
-
-            <div className="name">
-                <img src="https://wallpapercave.com/wp/wp6686191.jpg" alt="" className="pfp" />
-                Someone else
-            </div>
-
-            <div className="name">
-                <img src="https://wallpapercave.com/wp/wp6686191.jpg" alt="" className="pfp" />
-                Someone
-            </div>
-
-            <div className="name">
-                <img src="https://wallpapercave.com/wp/wp6686191.jpg" alt="" className="pfp" />
-                Someone else
-            </div>
-
-
-
-
+            {
+                users.map(user => {
+                    console.log(user);
+                    return (
+                        <Chat user={user}  setSelectedUser={setSelectedUser} selectedUser={selectedUser} />
+                    )
+                })
+            }
         </div>
     )
 }
